@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Multiplayer-RPS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="assets\css\reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets\css\style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+   
+</head>
+<body>
+
+    <div id="gameDiv">
+        <div class="row" id="titleDiv">
+            <div class="col-12">
+                <p class="text-center">Rock Paper Scissors</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center">
+                    <input id="name-input-player" placeholder="Player Enter Name!" class="text-center">
+                    <button id="name-input-player-submit" type="submit">Enter</button>
+                    <p id="welcome-player" class="text-center"></p>
+                    <p id="waiting-for-player" class="text-center"></p>
+
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 mr-5 ml-3" id="player1Move">
+                    <div>
+                        <p class="text-center" id="player1Display"></p>
+                        <p class="text-center" id="player1Rock">Rock</p>
+                        <p class="text-center" id="player1Paper">Paper</p>
+                        <p class="text-center" id="player1Scissors">Scissors</p>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-3 mr-4" id="win-display">
+                    <div id="who-wins-display"></div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-3" id="player2Move">
+                    <div>
+                        <p class="text-center" id="player2Display"></p>
+                        <p class="text-center" id="player2Rock">Rock</p>
+                        <p class="text-center" id="player2Paper">Paper</p>
+                        <p class="text-center" id="player2Scissors">Scissors</p>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center mt-3">
+                        <textarea rows="5" cols="40"></textarea>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">
+                        <input id="chat-input">
+                        <button id="chat-input-submit" type="submit">Enter</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets\javascript\app.js"></script>
+
+    
+   
+    
+</body>
+</html>

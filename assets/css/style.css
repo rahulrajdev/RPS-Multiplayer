@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(193, 221, 193)
+}
+
+#titleDiv {
+    background-color: rgb(133, 184, 127);
+    padding-top: 10px;
+}
+
+#player1Move {
+    background-color: white;
+    height: 200px;
+}
+
+#player2Move {
+    background-color: white;
+}
+
+#win-display {
+    background-color: white;
+}
+
